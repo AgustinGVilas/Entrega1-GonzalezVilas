@@ -1,0 +1,27 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+
+
+{% block titulo_principal %}
+
+Busqueda de Motocicletas
+
+{% endblock %}
+
+
+
+
+
+{% block boton %}
+
+<form action="/AppCoder/busquedaMotos" method="GET">
+
+    <input type="text" name="marca">
+
+    <input type="submit" value="Buscar">
+ 
+ </form>
+
+{% endblock %}

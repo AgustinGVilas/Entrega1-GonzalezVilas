@@ -1,0 +1,34 @@
+
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+
+
+{% block titulo_principal %}
+
+Estamos buscando el camión con el peso: {{peso}}
+
+{% endblock %}
+
+
+{% block texto %}
+
+
+{% if camion %}
+
+<ul>
+    {% for x in camion %}
+
+        <p>Peso: {{x.peso}} </p>
+        <p>Capacidad de carga: {{x.capCarga}} </p>
+       
+
+    {% endfor %}
+
+</ul>
+
+{% endif %}
+
+
+{% endblock %}

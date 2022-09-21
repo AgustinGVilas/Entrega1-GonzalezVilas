@@ -1,0 +1,34 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+
+
+{% block titulo_principal %}
+
+Automovil
+
+{% endblock %}
+
+
+{% block boton %}
+
+<form action="" method="POST"> {% csrf_token %}
+
+    <table>
+ 
+         {{ miFormu.as_table }}
+ 
+    </table>
+ 
+    <input type="submit" value="Enviar">
+ 
+ </form>
+
+{% endblock %}
+
+{% block texto %}
+
+Ingrese los datos del vehículo
+
+{% endblock %}

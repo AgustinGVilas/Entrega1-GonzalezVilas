@@ -1,0 +1,24 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+
+
+{% block titulo_principal %}
+
+Vehículos
+
+{% endblock %}
+
+
+
+{% block texto %}
+
+¡Bienvenido a la página!
+
+<button>
+<a href="{% url 'BusquedaVehiculo' %}">Buscar</a>
+
+</button>
+
+{% endblock %}

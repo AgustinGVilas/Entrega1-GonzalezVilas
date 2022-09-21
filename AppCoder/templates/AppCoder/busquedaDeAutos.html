@@ -1,0 +1,32 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+
+
+{% block titulo_principal %}
+
+Estamos buscando la marca: {{marca}}
+
+{% endblock %}
+
+
+{% block texto %}
+
+{% if auto %}
+
+<ul>
+    {% for x in auto %}
+
+        <p>Marca: {{x.marca}}</p>
+        <p>Modelo: {{x.modelo}} </p>
+        <p>Año: {{x.año}} </p>
+
+    {% endfor %}
+
+</ul>
+
+{% endif %}
+
+
+{% endblock %}

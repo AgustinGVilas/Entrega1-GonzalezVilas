@@ -1,0 +1,27 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+
+
+{% block titulo_principal %}
+
+Busqueda de Camiones
+
+{% endblock %}
+
+
+
+
+
+{% block boton %}
+
+<form action="/AppCoder/busquedaCamiones" method="GET">
+
+    <input type="text" name="peso">
+
+    <input type="submit" value="Buscar">
+ 
+ </form>
+
+{% endblock %}
